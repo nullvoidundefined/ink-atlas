@@ -1,0 +1,7 @@
+packages:
+  - 'apps/server'
+  - 'apps/client/web'
+  - 'packages/client-shared'
+  - 'packages/constants'
+  - 'packages/tokens'
+  - 'packages/types'

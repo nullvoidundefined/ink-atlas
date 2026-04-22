@@ -1,0 +1,34 @@
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: opacity var(--transition-hover, 0.15s);
+  width: 100%;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+.primary {
+  background: var(--foreground);
+  color: var(--white);
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+}
+
+.secondary {
+  background: var(--background);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+
+  &:hover:not(:disabled) {
+    background: var(--surface-hover);
+  }
+}
